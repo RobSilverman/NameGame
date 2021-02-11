@@ -49,6 +49,7 @@ struct HomeView: View {
                 } label: {
                     HomeMenuButton(buttonText: "Timed Mode")
                         .padding(.horizontal)
+                        .padding(.bottom)
                 }
             }
         }
