@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var employeeModel: EmployeeModel
+    
     var body: some View {
         ZStack {
             Color("BackgroundColor")
@@ -50,11 +52,15 @@ struct HomeView: View {
                 }
             }
         }
+        .onAppear {
+            employeeModel.loadEmployees()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(EmployeeModel())
     }
 }

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct NameGameApp: App {
+    @StateObject private var employeeModel = EmployeeModel()
+    
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(employeeModel)
         }
     }
 }
