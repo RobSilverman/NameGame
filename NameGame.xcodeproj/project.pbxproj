@@ -17,6 +17,12 @@
 		97997C4F25D4A2EE0010C4BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97997C2325D4A2EE0010C4BC /* Assets.xcassets */; };
 		97997C6B25D4B7C00010C4BC /* HomeMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C6A25D4B7BF0010C4BC /* HomeMenuButton.swift */; };
 		97997C6C25D4B7C00010C4BC /* HomeMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C6A25D4B7BF0010C4BC /* HomeMenuButton.swift */; };
+		97997C7225D4CDF50010C4BC /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C7125D4CDF50010C4BC /* GameView.swift */; };
+		97997C7325D4CDF50010C4BC /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C7125D4CDF50010C4BC /* GameView.swift */; };
+		97997C8125D4D1A90010C4BC /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C8025D4D1A90010C4BC /* Employee.swift */; };
+		97997C8225D4D1A90010C4BC /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C8025D4D1A90010C4BC /* Employee.swift */; };
+		97997C9025D4D57B0010C4BC /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C8F25D4D57B0010C4BC /* EmployeeModel.swift */; };
+		97997C9125D4D57B0010C4BC /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C8F25D4D57B0010C4BC /* EmployeeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,9 @@
 		97997C4725D4A2EE0010C4BC /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		97997C4925D4A2EE0010C4BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97997C6A25D4B7BF0010C4BC /* HomeMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuButton.swift; sourceTree = "<group>"; };
+		97997C7125D4CDF50010C4BC /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		97997C8025D4D1A90010C4BC /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		97997C8F25D4D57B0010C4BC /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				97997C2125D4A2EC0010C4BC /* NameGameApp.swift */,
-				97997C2225D4A2EC0010C4BC /* HomeView.swift */,
-				97997C6A25D4B7BF0010C4BC /* HomeMenuButton.swift */,
+				97997C8825D4D1D00010C4BC /* Views */,
+				97997C8725D4D1C20010C4BC /* Models */,
 				97997C2325D4A2EE0010C4BC /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -153,6 +162,41 @@
 				97997C4925D4A2EE0010C4BC /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		97997C8725D4D1C20010C4BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97997C8025D4D1A90010C4BC /* Employee.swift */,
+				97997C8F25D4D57B0010C4BC /* EmployeeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97997C8825D4D1D00010C4BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97997C8A25D4D1F00010C4BC /* GameView */,
+				97997C8925D4D1D60010C4BC /* HomeView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97997C8925D4D1D60010C4BC /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				97997C6A25D4B7BF0010C4BC /* HomeMenuButton.swift */,
+				97997C2225D4A2EC0010C4BC /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		97997C8A25D4D1F00010C4BC /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				97997C7125D4CDF50010C4BC /* GameView.swift */,
+			);
+			path = GameView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +358,9 @@
 			files = (
 				97997C6B25D4B7C00010C4BC /* HomeMenuButton.swift in Sources */,
 				97997C4C25D4A2EE0010C4BC /* HomeView.swift in Sources */,
+				97997C7225D4CDF50010C4BC /* GameView.swift in Sources */,
+				97997C9025D4D57B0010C4BC /* EmployeeModel.swift in Sources */,
+				97997C8125D4D1A90010C4BC /* Employee.swift in Sources */,
 				97997C4A25D4A2EE0010C4BC /* NameGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +371,9 @@
 			files = (
 				97997C6C25D4B7C00010C4BC /* HomeMenuButton.swift in Sources */,
 				97997C4D25D4A2EE0010C4BC /* HomeView.swift in Sources */,
+				97997C7325D4CDF50010C4BC /* GameView.swift in Sources */,
+				97997C9125D4D57B0010C4BC /* EmployeeModel.swift in Sources */,
+				97997C8225D4D1A90010C4BC /* Employee.swift in Sources */,
 				97997C4B25D4A2EE0010C4BC /* NameGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
