@@ -11,10 +11,12 @@
 		97997C4825D4A2EE0010C4BC /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C4725D4A2EE0010C4BC /* Tests_macOS.swift */; };
 		97997C4A25D4A2EE0010C4BC /* NameGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C2125D4A2EC0010C4BC /* NameGameApp.swift */; };
 		97997C4B25D4A2EE0010C4BC /* NameGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C2125D4A2EC0010C4BC /* NameGameApp.swift */; };
-		97997C4C25D4A2EE0010C4BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C2225D4A2EC0010C4BC /* ContentView.swift */; };
-		97997C4D25D4A2EE0010C4BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C2225D4A2EC0010C4BC /* ContentView.swift */; };
+		97997C4C25D4A2EE0010C4BC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C2225D4A2EC0010C4BC /* HomeView.swift */; };
+		97997C4D25D4A2EE0010C4BC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C2225D4A2EC0010C4BC /* HomeView.swift */; };
 		97997C4E25D4A2EE0010C4BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97997C2325D4A2EE0010C4BC /* Assets.xcassets */; };
 		97997C4F25D4A2EE0010C4BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97997C2325D4A2EE0010C4BC /* Assets.xcassets */; };
+		97997C6B25D4B7C00010C4BC /* HomeMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C6A25D4B7BF0010C4BC /* HomeMenuButton.swift */; };
+		97997C6C25D4B7C00010C4BC /* HomeMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97997C6A25D4B7BF0010C4BC /* HomeMenuButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		97997C2125D4A2EC0010C4BC /* NameGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameGameApp.swift; sourceTree = "<group>"; };
-		97997C2225D4A2EC0010C4BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		97997C2225D4A2EC0010C4BC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		97997C2325D4A2EE0010C4BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97997C2825D4A2EE0010C4BC /* NameGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NameGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97997C2B25D4A2EE0010C4BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 		97997C4325D4A2EE0010C4BC /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97997C4725D4A2EE0010C4BC /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		97997C4925D4A2EE0010C4BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97997C6A25D4B7BF0010C4BC /* HomeMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				97997C2125D4A2EC0010C4BC /* NameGameApp.swift */,
-				97997C2225D4A2EC0010C4BC /* ContentView.swift */,
+				97997C2225D4A2EC0010C4BC /* HomeView.swift */,
+				97997C6A25D4B7BF0010C4BC /* HomeMenuButton.swift */,
 				97997C2325D4A2EE0010C4BC /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -308,7 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97997C4C25D4A2EE0010C4BC /* ContentView.swift in Sources */,
+				97997C6B25D4B7C00010C4BC /* HomeMenuButton.swift in Sources */,
+				97997C4C25D4A2EE0010C4BC /* HomeView.swift in Sources */,
 				97997C4A25D4A2EE0010C4BC /* NameGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97997C4D25D4A2EE0010C4BC /* ContentView.swift in Sources */,
+				97997C6C25D4B7C00010C4BC /* HomeMenuButton.swift in Sources */,
+				97997C4D25D4A2EE0010C4BC /* HomeView.swift in Sources */,
 				97997C4B25D4A2EE0010C4BC /* NameGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
