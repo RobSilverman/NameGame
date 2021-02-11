@@ -14,6 +14,7 @@ struct HomeMenuButton: View {
         Text(buttonText)
             .frame(maxWidth: .infinity)
             .padding()
+            .font(.custom("SF Pro Text", size: 17, relativeTo: .body))
             .foregroundColor(.white)
             .background(Color("MenuButtonColor"))
             .cornerRadius(8.0)
