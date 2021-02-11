@@ -9,22 +9,23 @@ import Foundation
 
 struct Employee: Codable, Hashable, Identifiable {
     
+    //TODO: Potentially remove unnecessary fields? (Starting with optionals)
     var firstName: String
     var headshot: Headshot
     var id: String
-    var jobTitle: String
+    var jobTitle: String?
     var lastName: String
     var slug: String
     var type: String
     
     struct Headshot: Codable, Hashable, Identifiable {
         var alt: String
-        var height: Int
+        var height: Int?
         var id: String
-        var mimeType: String
+        var mimeType: String?
         var type: String
-        var url: String
-        var width: Int
+        var url: String?
+        var width: Int?
     }
     
 }
