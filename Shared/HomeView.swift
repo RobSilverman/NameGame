@@ -36,7 +36,6 @@ struct HomeView: View {
             VStack {
                 Spacer()
                 
-                //TODO: Abstract into custom view
                 Button {
                     print("Practice Mode Tapped")
                 } label: {
