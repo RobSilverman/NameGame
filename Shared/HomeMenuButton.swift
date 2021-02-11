@@ -13,9 +13,7 @@ struct HomeMenuButton: View {
     var body: some View {
         Text(buttonText)
             .frame(maxWidth: .infinity)
-            //TODO: Add some padding to button width
             .padding()
-            .font(.custom("SF Pro Text", size: 17))
             .foregroundColor(.white)
             .background(Color("MenuButtonColor"))
             .cornerRadius(8.0)

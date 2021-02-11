@@ -26,7 +26,6 @@ struct HomeView: View {
                     .offset(y: -50)
                 
                 Text("Try matching the WillowTree employee to their photo")
-                    .font(.custom("SF Pro Text", size: 17, relativeTo: .body))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .frame(width: 281)
@@ -40,12 +39,14 @@ struct HomeView: View {
                     print("Practice Mode Tapped")
                 } label: {
                     HomeMenuButton(buttonText: "Practice Mode")
+                        .padding(.horizontal)
                 }
                 
                 Button {
                     print("Timed Mode Tapped")
                 } label: {
                     HomeMenuButton(buttonText: "Timed Mode")
+                        .padding(.horizontal)
                 }
             }
         }
