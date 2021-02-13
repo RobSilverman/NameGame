@@ -11,8 +11,8 @@ import Foundation
 final class EmployeeModel: ObservableObject {
     @Published var employees = [Employee]()
     
-    let apiURL = "https://namegame.willowtreeapps.com/api/v1.0/profiles"
     func loadEmployees() {
+        let apiURL = "https://namegame.willowtreeapps.com/api/v1.0/profiles"
         guard let url = URL(string: apiURL) else {
             fatalError("Invalid URL")
         }
