@@ -12,9 +12,11 @@ struct GameView: View {
     
     var body: some View {
         VStack {
-            Text("Placeholder")
+            Text(game.correctAnswer)
                 .font(.title)
                 .fontWeight(.bold)
+            
+            GameButton()
         }
     }
 }

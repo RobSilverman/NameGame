@@ -9,14 +9,14 @@ import SwiftUI
 
 struct PracticeModeView: View {
     @EnvironmentObject var employeeModel: EmployeeModel
-    @StateObject var practiceGame = PracticeGame()
+    @StateObject var game = Game()
     
     var body: some View {
         GameView()
-            .environmentObject(practiceGame)
+            .environmentObject(game)
             .onAppear {
-                practiceGame.employees += employeeModel.employees
-                practiceGame.newQuestion()
+                game.employees += employeeModel.employees
+                game.newQuestion()
             }
     }
 }
