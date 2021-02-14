@@ -7,6 +7,15 @@
 
 import Foundation
 
-class Game {
+class Game: ObservableObject {
+    var employees: [Employee] = []
+    @Published var employeeButtons: [EmployeeButton] = []
     
+    func newQuestion() {
+        employees.shuffle()
+        employeeButtons = []
+        for i in 0...5 {
+            employeeButtons.append(EmployeeButton(employee: employees[i]))
+        }
+    }
 }

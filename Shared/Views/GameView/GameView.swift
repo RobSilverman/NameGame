@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct GameView: View {
-    var correctName: String = "Loading"
+    @EnvironmentObject var game: Game
     
     var body: some View {
         VStack {
-            Text(correctName)
+            Text("Placeholder")
                 .font(.title)
                 .fontWeight(.bold)
         }
