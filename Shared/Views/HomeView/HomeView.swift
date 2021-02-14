@@ -37,9 +37,9 @@ struct HomeView: View {
             VStack {
                 Spacer()
                 
-                Button {
-                    print("Practice Mode Tapped")
-                } label: {
+                NavigationLink(
+                    destination: PracticeModeView()
+                        .environmentObject(employeeModel)) {
                     HomeMenuButton(buttonText: "Practice Mode")
                         .padding(.horizontal)
                 }

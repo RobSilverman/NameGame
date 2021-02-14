@@ -13,8 +13,10 @@ struct NameGameApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
-                .environmentObject(employeeModel)
+            NavigationView {
+                HomeView()
+                    .environmentObject(employeeModel)
+            }
         }
     }
 }
