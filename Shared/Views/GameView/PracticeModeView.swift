@@ -18,6 +18,8 @@ struct PracticeModeView: View {
                 game.employees += employeeModel.employees
                 game.newQuestion()
             }
+            .navigationBarTitle("Practice Mode")
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 
