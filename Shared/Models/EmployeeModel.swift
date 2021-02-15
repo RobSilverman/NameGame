@@ -10,6 +10,18 @@ import Foundation
 
 final class EmployeeModel: ObservableObject {
     @Published var employees = [Employee]()
+    @Published var employeeButtons: [EmployeeButton] = []
+    @Published var correctAnswer: String = "Loading"
+    
+    func newQuestion() {
+        employees.shuffle()
+        correctAnswer = employees[0].firstName + " " + employees[0].lastName
+        employeeButtons = []
+        for i in 0...5 {
+            employeeButtons.append(EmployeeButton(employee: employees[i]))
+            employeeButtons[i].buttonState = .active
+        }
+    }
     
     func loadEmployees() {
         let apiURL = "https://namegame.willowtreeapps.com/api/v1.0/profiles"
@@ -24,6 +36,7 @@ final class EmployeeModel: ObservableObject {
                     let decodedResponse = try JSONDecoder().decode(Array<Employee>.self, from: data)
                     DispatchQueue.main.async {
                         self.employees = decodedResponse
+                        self.newQuestion()
                     }
                 } catch { print(error) }
             }

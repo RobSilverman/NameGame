@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct GameButton: View {
-    @EnvironmentObject var game: Game
+    @EnvironmentObject var employeeModel: EmployeeModel
     
     var body: some View {
         Button {
-            
+            employeeModel.newQuestion()
         } label: {
-            
+            Text(employeeModel.employeeButtons[0].employee.firstName)
         }
     }
 }

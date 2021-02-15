@@ -9,15 +9,10 @@ import SwiftUI
 
 struct PracticeModeView: View {
     @EnvironmentObject var employeeModel: EmployeeModel
-    @StateObject var game = Game()
     
     var body: some View {
         GameView()
-            .environmentObject(game)
-            .onAppear {
-                game.employees += employeeModel.employees
-                game.newQuestion()
-            }
+            .environmentObject(employeeModel)
             .navigationBarTitle("Practice Mode")
             .navigationBarTitleDisplayMode(.inline)
     }

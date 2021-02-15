@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct GameView: View {
-    @EnvironmentObject var game: Game
+    @EnvironmentObject var employeeModel: EmployeeModel
     
     var body: some View {
         VStack {
-            Text(game.correctAnswer)
+            Text(employeeModel.correctAnswer)
                 .font(.title)
                 .fontWeight(.bold)
             
             GameButton()
+                .environmentObject(employeeModel)
         }
     }
 }
