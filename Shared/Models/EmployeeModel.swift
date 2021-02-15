@@ -24,6 +24,9 @@ final class EmployeeModel: ObservableObject {
     }
     
     func loadEmployees() {
+        guard employees.isEmpty else { return }
+        //See note in .onAppear() call in HomeView for why I'm guarding against this.
+        
         let apiURL = "https://namegame.willowtreeapps.com/api/v1.0/profiles"
         guard let url = URL(string: apiURL) else {
             fatalError("Invalid URL")
