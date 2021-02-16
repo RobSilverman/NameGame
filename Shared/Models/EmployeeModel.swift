@@ -25,6 +25,7 @@ final class EmployeeModel: ObservableObject {
     
     func loadEmployees() {
         guard employees.isEmpty else { return }
+        //This guard statement is in place in case loadEmployees() gets called more than once.
         //See note in .onAppear() call in HomeView for why I'm guarding against this.
         
         let apiURL = "https://namegame.willowtreeapps.com/api/v1.0/profiles"

@@ -16,8 +16,9 @@ struct GameView: View {
                 .font(.title)
                 .fontWeight(.bold)
             
-            GameButton()
+            GameButton(employeeButton: employeeModel.employeeButtons[0])
                 .environmentObject(employeeModel)
+                .aspectRatio(contentMode: .fit)
         }
     }
 }

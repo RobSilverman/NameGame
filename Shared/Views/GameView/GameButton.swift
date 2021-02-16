@@ -9,12 +9,14 @@ import SwiftUI
 
 struct GameButton: View {
     @EnvironmentObject var employeeModel: EmployeeModel
+    @StateObject var employeeButton: EmployeeButton
     
     var body: some View {
         Button {
             employeeModel.newQuestion()
         } label: {
-            Text(employeeModel.employeeButtons[0].employee.firstName)
+            GameImage(url: "https://namegame.willowtreeapps.com/" + employeeButton.employee.headshot.url!)
+                .environmentObject(employeeButton)
         }
     }
 }
@@ -22,6 +24,7 @@ struct GameButton: View {
 struct GameButton_Previews: PreviewProvider {
     static var previews: some View {
         //TODO: Implement GameButton Preview
-        GameButton()
+        //GameButton()
+        Text("Placeholder")
     }
 }

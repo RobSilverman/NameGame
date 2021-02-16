@@ -55,6 +55,8 @@ struct HomeView: View {
         }
         .onAppear {
             //This closure gets called twice due to a SwiftUI bug
+            //To reproduce the behavior (closure being called a second time)
+            //Throw a breakpoint on .loadEmployees(), then start either mode
             //For more details, see https://stackoverflow.com/questions/63080830/swifui-onappear-gets-called-twice
             employeeModel.loadEmployees()
         }
