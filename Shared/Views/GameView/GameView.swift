@@ -5,6 +5,7 @@
 //  Created by Robert Silverman on 2/10/21.
 //
 
+import QGrid
 import SwiftUI
 
 struct GameView: View {
@@ -15,10 +16,15 @@ struct GameView: View {
             Text(employeeModel.correctAnswer)
                 .font(.title)
                 .fontWeight(.bold)
+                .padding(.top)
             
-            GameButton(employeeButton: employeeModel.employeeButtons[0])
-                .environmentObject(employeeModel)
-                .aspectRatio(contentMode: .fit)
+            QGrid(employeeModel.employeeButtons,
+                  columns: 2,
+                  columnsInLandscape: 3,
+                  content: {
+                    employee in
+                    GameButton(employeeButton: employee)
+                  })
         }
     }
 }

@@ -9,14 +9,13 @@ import SwiftUI
 
 struct GameButton: View {
     @EnvironmentObject var employeeModel: EmployeeModel
-    @StateObject var employeeButton: EmployeeButton
+    var employeeButton: EmployeeButton
     
     var body: some View {
         Button {
             employeeModel.newQuestion()
         } label: {
-            GameImage(url: "https://namegame.willowtreeapps.com/" + employeeButton.employee.headshot.url!)
-                .environmentObject(employeeButton)
+            GameImage(url: employeeButton.employee.headshot.url ?? "")
         }
     }
 }

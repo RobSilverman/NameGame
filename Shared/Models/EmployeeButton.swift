@@ -7,8 +7,8 @@
 
 import Foundation
 
-class EmployeeButton: ObservableObject {
-    let employee: Employee
+class EmployeeButton: ObservableObject, Identifiable {
+    var employee: Employee
     var buttonState: ButtonState = .loading
     
     init(employee: Employee) {
